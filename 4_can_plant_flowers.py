@@ -44,6 +44,7 @@ class TestSolution(unittest.TestCase):
         self.sol = Solution()
 
     def test_given_cases(self):
+        self.assertEqual(self.sol.canPlaceFlowers([0,0,0,0,0,0,0,0,0],5), True)
         self.assertEqual(self.sol.canPlaceFlowers([1,0], 1), False)
         self.assertEqual(self.sol.canPlaceFlowers([1,0,0,0,0,1], 2), False)
         self.assertEqual(self.sol.canPlaceFlowers([1,0,1,0,0,0,0,0,1],2), True)
